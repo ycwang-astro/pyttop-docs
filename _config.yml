@@ -1,0 +1,33 @@
+# Book settings
+
+title: PyTTOP Documentation
+author: Yu-Chen Wang
+copyright: "2025"
+# logo: logo.png
+
+# Force re-execution of notebooks on each build.
+execute:
+  # execute_notebooks: force
+
+  # allow_errors: true
+  execute_notebooks: auto
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  extra_extensions:
+  - 'sphinx.ext.autodoc'
+  - 'sphinx.ext.napoleon'
+  - 'sphinx.ext.viewcode'
+  - 'sphinx.ext.autosummary'
+  config:
+    add_module_names: False
+    autosummary_generate: True
+

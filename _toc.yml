@@ -1,0 +1,36 @@
+# Table of contents
+
+format: jb-book
+root: index
+parts:
+- caption: Documentation
+  chapters:
+  - file: intro/Introduction
+    sections:
+      - file: intro/why
+  - file: start/Getting_started
+    sections: 
+      - file: start/Installation
+      - file: start/Tutorials
+  - file: basics/basics
+    sections:
+      - file: basics/IO
+      - file: basics/operations
+      - file: basics/meta
+  - file: subset/subset
+    sections:
+      - file: subset/subset_def
+      - file: subset/subset_use
+  - file: match/match
+  - file: plot/plot
+  - file: extension/extension
+  - file: caveats/caveats
+    sections:
+      - file: caveats/subset
+      - file: caveats/subset_mask
+  - file: api
+- caption: Tutorials
+  chapters:
+    - file: tutorials/quickstart
+      title: Quickstart
+    
