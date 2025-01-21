@@ -1,3 +1,4 @@
 jupyter-book
 pyttop
 scipy
+h5py
