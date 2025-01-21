@@ -1,3 +1,2 @@
+pyttop
 jupyter-book
-matplotlib
-numpy
