@@ -166,7 +166,7 @@ smith = lgm.add_subsets(
     )
 smith
 ```
-As shown in the output, 38 out of 5000 entries have the surname "Smith".
+As shown in the output, 47 out of 5000 entries have the surname "Smith".
 
 We may also want to study potential systematic differences between sexes. To do so, let us create a "subset group" for the different sexes:
 ```{code-cell}
@@ -220,20 +220,21 @@ It seems that the dependence on age can be better shown by the following correla
 ```{code-cell}
 lgm.plots(
     'scatter', # making a scatter plot
-    cols=('10*height - weight', 'age'), # 'np.log10(age)' versus'weight - 10**height' 
+    cols=('10*height - weight', 'age'), # 'age' versus 'weight - 10**height' 
     eval=True, # we need to evaluate the above expression (since '10*height - weight' is not a column name)
     s=.5, # more scatter settings
     subsets='all', # plotting all rows
     )
 ```
 This appears to be a good correlation. So let us define a new quantity $q$:
-$$
+$
 q = W - 10H,
-$$
+$
 where $W$ denotes weight and $H$ denotes height. We can calculate this and add it as a new column:
 ```{code-cell}
-lgm.eval('10*height - weight', to_col='q') # evaluate '10*height - weight' and store it in the column 'q'
+lgm.eval('10*height - weight', to_col='q'); # evaluate '10*height - weight' and store it in the column 'q'
 ```
+<!-- lgm['q'] -->
 
 Great, let us report this in our new paper, *On the Properties of the Little Green Men*. However, we might want to set the labels more formally, rather than directly showing column names:
 ```{code-cell}
@@ -258,7 +259,7 @@ lgm.plots(
     )
 lgm.plots(
     'scatter', # making a scatter plot
-    cols=('10*height - weight', 'age'), # 'np.log10(age)' versus'weight - 10**height' 
+    cols=('10*height - weight', 'age'), # 'age' versus 'weight - 10**height' 
     eval=True, # we need to evaluate the above expression ('10*height - weight' is not a column name)
     s=.5, c='k', # more scatter settings
     subsets='all', # plotting all entries

@@ -1,4 +1,5 @@
 # Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
 root: index
@@ -7,6 +8,7 @@ parts:
   chapters:
   - file: intro/Introduction
     sections:
+      # - file: intro/how_to_use
       - file: intro/why
   - file: start/Getting_started
     sections: 
@@ -22,12 +24,23 @@ parts:
       - file: subset/subset_def
       - file: subset/subset_use
   - file: match/match
+    sections:
+      - file: match/tree_match_basic
+      - file: match/tree_match_merge
   - file: plot/plot
+    sections:
+      - file: plot/plot_single
+      - file: plot/plot_subsets
+      - file: plot/plot_customize
   - file: extension/extension
+    sections:
+      - file: extension/custom_matcher
+      - file: extension/custom_plotfunc
   - file: caveats/caveats
     sections:
       - file: caveats/subset
       - file: caveats/subset_mask
+      - file: caveats/keep_unmatched
   - file: api
 - caption: Tutorials
   chapters:
