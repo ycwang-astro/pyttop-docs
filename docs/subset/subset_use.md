@@ -45,7 +45,11 @@ Multiple subsets are returned as a list.
 
 
 ## Special subsets
-A "special subset" is a virtual subset that is only created when retrieving (or referring to) it. It is never considered a real subset of a `Data` unless explicitly adding it to a `Data` using `data.add_subsets()`.
+A "special subset" is a virtual subset that is *temporarily* created when retrieving (or referring to) it. It is never considered a real subset of a `Data` (and thus cannot be seen with `data.subset_summary()`) unless explicitly adding it to a `Data` using `data.add_subsets()`.
+
+```{tip}
+"Retrieving" a special subset is actually creating a new subset as if using an existing subset of `Data`. This can be useful when [making plots](../plot/plot_subsets), as you can specify a special subset without defining it in advance, and it will be automatically created (temporarily).
+```
 
 ### `$unmasked`
 `$unmasked` is a special group used to obtain a subset that indicates whether an item in a column is not masked. The paths of subsets in this group follow the form `$unmasked/col_name`.

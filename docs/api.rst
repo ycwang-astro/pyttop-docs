@@ -1,27 +1,27 @@
 API Reference
 =============
 
-``table``
+``pyttop.table``
 ---------
 
-.. automodule:: pyttop.table.table
-    :members:
+.. automodule:: pyttop.table
+    :members: Data, Subset
 
-``matcher``
+``pyttop.matcher``
 -----------
 
 .. automodule:: pyttop.matcher
-    :members:
+    :members: IdentityMatcher, ExactMatcher, SkyMatcher, DuplicationWarning
 
-``plot``
+``pyttop.plot``
 --------
 .. automodule:: pyttop.plot
     :members:
 
-``utils``
+``pyttop.utils``
 ---------
 .. automodule:: pyttop.utils
-    :members:
+    :members: bitwise_all
 
 
 .. .. autosummary::

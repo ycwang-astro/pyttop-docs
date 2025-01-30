@@ -41,9 +41,14 @@ parts:
       - file: caveats/subset
       - file: caveats/subset_mask
       - file: caveats/keep_unmatched
+      # - file: caveats/match_with_duplicate
   - file: api
 - caption: Tutorials
   chapters:
     - file: tutorials/quickstart
       title: Quickstart
-    
+- caption: Project Information
+  chapters:
+    # - file: 
+    - file: project/CHANGELOG
+    - file: project/develop

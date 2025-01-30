@@ -239,8 +239,8 @@ lgm.eval('10*height - weight', to_col='q'); # evaluate '10*height - weight' and 
 Great, let us report this in our new paper, *On the Properties of the Little Green Men*. However, we might want to set the labels more formally, rather than directly showing column names:
 ```{code-cell}
 lgm.set_labels(
-    height='$H/\mathrm{cm}$',
-    weight='$W/\mathrm{g}$',
+    height=r'$H/\mathrm{cm}$',
+    weight=r'$W/\mathrm{g}$',
     age=r'$\tau/\mathrm{yr}$',
     )
 ```
