@@ -117,6 +117,10 @@ d.add_subsets(
     )
 ```
 
+```{note}
+When a subset is created from a masked array (e.g., created by evaluating columns with masked values), the masked values are NEVER considered elements of the subset. See [this page](../caveats/subset_mask) for discussions, demonstrations and caveats.  
+```
+
 ## Subset groups
 By default, the subset is added to the "default" subset group when calling `add_subsets()`. Alternatively, a subset can be added to a specified **subset group**. For example:
 ```Python
@@ -128,12 +132,8 @@ d.add_subsets(
 ```
 The above example adds two subsets to a group named 'mygroup' (creating it if it does not already exist).
 
-```{note}
-When a subset is created from a masked array (e.g., created by evaluating columns with masked values), the masked values are NEVER considered elements of the subset. See [this page](../caveats/subset_mask) for discussions, demonstrations and caveats.  
-```
-
 ### Convenience methods for creating groups of subsets
-A subset group can be particularly useful when there are several subsets that are related to each other. PyTTOP provide convenience methods to quickly creating groups of subsets. For example, the below code defines a subset group named 'x', which consists of 2 subsets, `0 < x < 3` and `3 < x < 5`:
+A subset group can be particularly useful when several subsets are related. PyTTOP offers convenient methods for quickly creating groups of subsets. For example, the following code defines a subset group named 'x', which includes 2 subsets, `0 < x < 3` and `3 < x < 5`:
 ```{code-cell}
 d.subset_group_from_ranges(column='x', ranges=[[0, 3], [3, 5]])
 ```
