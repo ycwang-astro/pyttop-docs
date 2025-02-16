@@ -5,7 +5,7 @@ Python Tools for Table Operations and Plotting (PyTTOP) is a Python package deve
 
 The primary goal of this package is to streamline and simplify basic operations and explorations of tabular data, making them as intuitive as possible. This is grounded in the belief that scientists should focus more on the tasks they wish to accomplish, rather than the implementation details of the code, particularly during the initial stages of quickly exploring data features. 
 
-To get an overview of the highlights and features of the package, or to determine if it suits your needs, see [Why PyTTOP](../intro/why). For an overview of this documentation and guidance on finding what you need, see [Introduction](../intro/Introduction).
+To get an overview of the highlights and features of the package, or to determine if it suits your needs, see [Why PyTTOP](../intro/why). For an overview of this documentation and guidance on finding what you need, see [this guide](../intro/how_to_use).
 
 ## Basic information
 Both *PyTTOP* and this *PyTTOP Documentation* are developed by Yu-Chen Wang.

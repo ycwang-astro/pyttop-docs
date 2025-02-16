@@ -53,7 +53,7 @@ lgm_bio.t
 
 
 ## Data preprocessing
-It appears that the table contains some missing values, such as `-99` in the 'age' column. To exclude these values from calculations, plots, and other analyses, we can mask them using the `mask_missing()` method:
+It appears that the table contains some missing values, such as `-99` in the 'age' column. To exclude these values from calculations, plots, and other analyses, we can mask them using the `mask_missing()` method (see [here](../basics/operations.md#masking-missing-values) for details):
 ```{code-cell}
 lgm_bio.mask_missing(missval=-99)
 ```
@@ -121,7 +121,7 @@ In astronomy, RA can be expressed in *hours*. If the RA column does not have uni
 
 
 ```{tip}
-By matching using `data.match(data1, <...>)`, we try to find *one* best matching row (if any) in `data1` for each row in `data`. This implies differences between `lgm_addr.match(lgm_house, <...>)` and `lgm_house.match(lgm_addr, <...>)`when , e.g., some instances are included in one table but not in the other table. For more details, see the [matching documentation](match/match).
+By matching using `data.match(data1, <...>)`, we try to find *one* best matching row (if any) in `data1` for each row in `data`. This implies differences between `lgm_addr.match(lgm_house, <...>)` and `lgm_house.match(lgm_addr, <...>)`when , e.g., some instances are included in one table but not in the other table. For more details, see the [matching documentation](../match/match).
 ```
 
 For simplicity, we will refer to `data.match(data1, <...>)` as "data1 matched to data". 
@@ -156,6 +156,7 @@ As seen, those without match for "surname" are masked.
 
 Now with our combined dataset, we are ready to analyze it.
 
+(defining-subsets)=
 ## Defining subsets
 It is common to be interested in subsets of a dataset. For example, we might want to know how many of the "little green men" have the surname "Smith". So let us import `Subset` and add a subset:
 ```{code-cell}
@@ -230,13 +231,13 @@ This appears to be a good correlation. So let us define a new quantity $q$:
 $
 q = W - 10H,
 $
-where $W$ denotes weight and $H$ denotes height. We can calculate this and add it as a new column:
+where $W$ denotes weight and $H$ denotes height. We can calculate this and add it as a new column (see [here](../basics/operations.md#evaluating-expressions) for details):
 ```{code-cell}
 lgm.eval('10*height - weight', to_col='q'); # evaluate '10*height - weight' and store it in the column 'q'
 ```
 <!-- lgm['q'] -->
 
-Great, let us report this in our new paper, *On the Properties of the Little Green Men*. However, we might want to set the labels more formally, rather than directly showing column names:
+Great, let us report this in our new paper, *On the Properties of the Little Green Men*. However, we might want to set the labels more formally, rather than directly showing column names (see [here](../plot/plot_customize.md#setting-labels-for-columns-and-subsets) for details):
 ```{code-cell}
 lgm.set_labels(
     height=r'$H/\mathrm{cm}$',
@@ -244,7 +245,7 @@ lgm.set_labels(
     age=r'$\tau/\mathrm{yr}$',
     )
 ```
-Now, with more control, we can further customize the plots:
+Now, with more control, we can further customize the plots (see [here](../plot/plot_customize.md#handling-figures-and-axes) for details):
 ```{code-cell}
 import matplotlib.pyplot as plt
 fig, axes = plt.subplots(1, 2, figsize=(10.8, 4.8))
