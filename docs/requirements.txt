@@ -1,4 +1,4 @@
 jupyter-book
-pyttop==0.4
+pyttop~=0.4.0
 scipy
 h5py
