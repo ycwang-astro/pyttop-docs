@@ -27,15 +27,15 @@ data['x'] = [1, 2, 3]
 data['y'] = [2, 4, 7]
 
 data.plots(
-    'scatter', # the plot function used
+    'scatter', # the plotting function used
     cols=('x', 'y'), # the columns used as inputs
-    marker='*', color='black', # more options for the plot function
+    marker='*', color='black', # more options for the plotting function
     );
 ```
 Where:
-- `'scatter'` specifies the type of plot, i.e., the name of the plot function.
-- `cols` specifies the columns to be used as positinoal arguments for the plot function;
-- `marker` and `color` are additional arguments passed to the plot function.
+- `'scatter'` specifies the type of plot, i.e., the name of the plotting function.
+- `cols` specifies the columns to be used as positinoal arguments for the plotting function;
+- `marker` and `color` are additional arguments passed to the plotting function.
 
 In this example, the effect is similar to:
 ```Python
@@ -60,7 +60,7 @@ plt.scatter(data['x'], data['y'], c=data['m'], marker='*')
 ```
 In PyTTOP, a colorbar and its label are also automatically generated.
 
-As shown, the `plots()` method allows you to simply specify the column names to be plotted, and the corresponding column data will be automatically passed to the plot function (e.g., `scatter`). The type of plot and the available arguments are defined by the plot function itself. You can use any of the built-in plot functions, as introduced [here](#built-in-plot-functions), or define your own plot functions by following the [instructions here](../extension/custom_plotfunc).
+As shown, the `plots()` method allows you to simply specify the column names to be plotted, and the corresponding column data will be automatically passed to the plotting function (e.g., `scatter`). The type of plot and the available arguments are defined by the plotting function itself. You can use any of the built-in plotting functions, as introduced [here](#built-in-plot-functions), or define your own plotting functions by following the [instructions here](../extension/custom_plotfunc).
 
 ### Enabling expression evaluation
 You can also provide expressions that can be evaluated by the `eval()` method (see the description [here](../basics/operations.md#evaluating-expressions)) instead of column names by setting `eval=True`:
@@ -81,8 +81,9 @@ data.plots(
     );
 ```
 
-## Built-in plot functions
-In `data.plots()`, you can specify any of the built-in plot functions by its name, such as `'hist'`. However, if you would like to access the plot function directly, you can import it from `pyttop.plot`:
+(built-in-plotfunc)=
+## Built-in basic plotting functions
+In `data.plots()`, you can specify any of the built-in plotting functions by its name, such as `'hist'`. However, if you would like to access the plotting function directly, you can import it from `pyttop.plot`:
 ```Python
 from pyttop.plot import hist
 ```
@@ -148,7 +149,7 @@ data.plots(
     );
 ```
 
-## Convenient plot methods
+## Convenient plotting methods
 PyTTOP offers several convenient methods to further simplify the code for generating plots. The methods and examples are listed below. Note that the default plot settings may differ from those used with `data.plots(<...>)`.
 
 ### `data.scatter()`

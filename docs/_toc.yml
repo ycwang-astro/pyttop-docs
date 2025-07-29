@@ -32,6 +32,7 @@ parts:
       - file: plot/plot_single
       - file: plot/plot_subsets
       - file: plot/plot_customize
+      - file: plot/plot_morefuncs
   - file: extension/extension
     sections:
       - file: extension/custom_matcher
@@ -42,7 +43,10 @@ parts:
       - file: caveats/subset_mask
       - file: caveats/keep_unmatched
       # - file: caveats/match_with_duplicate
-  - file: api
+- caption: API reference
+  chapters:
+    - file: api/main
+    - file: api/plotfuncs
 - caption: Tutorials
   chapters:
     - file: tutorials/quickstart
