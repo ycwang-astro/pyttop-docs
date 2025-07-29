@@ -60,7 +60,7 @@ plt.scatter(data['x'], data['y'], c=data['m'], marker='*')
 ```
 In PyTTOP, a colorbar and its label are also automatically generated.
 
-As shown, the `plots()` method allows you to simply specify the column names to be plotted, and the corresponding column data will be automatically passed to the plotting function (e.g., `scatter`). The type of plot and the available arguments are defined by the plotting function itself. You can use any of the built-in plotting functions, as introduced [here](#built-in-plot-functions), or define your own plotting functions by following the [instructions here](../extension/custom_plotfunc).
+As shown, the `plots()` method allows you to simply specify the column names to be plotted, and the corresponding column data will be automatically passed to the plotting function (e.g., `scatter`). The type of plot and the available arguments are defined by the plotting function itself. You can use any of the built-in plotting functions, as introduced [here](#built-in-plotfunc), or define your own plotting functions by following the [instructions here](../extension/custom_plotfunc).
 
 ### Enabling expression evaluation
 You can also provide expressions that can be evaluated by the `eval()` method (see the description [here](../basics/operations.md#evaluating-expressions)) instead of column names by setting `eval=True`:
