@@ -1,5 +1,7 @@
-API Reference
+Basic APIs
 =============
+
+This page includes basic APIs that are commonly used.
 
 ``pyttop.table``
 ----------------
@@ -16,7 +18,7 @@ API Reference
 ``pyttop.plot``
 ---------------
 .. automodule:: pyttop.plot
-    :members:
+    :members: plotFunc, plotFuncAx
 
 ``pyttop.utils``
 ----------------
