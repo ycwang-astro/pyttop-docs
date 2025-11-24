@@ -9,13 +9,13 @@ build:
   jobs:
     pre_build:
       # Generate on-the-fly Sphinx configuration from Jupyter Book's _config.yml
-      - "jupyter-book config sphinx docs/"
+      - "jupyter-book build docs/ --builder sphinx"
       - "mkdir docs/old_tutorials/samples/output"
       - "pip install git+https://github.com/ycwang-astro/pyttop.git"
 
 sphinx:
   # Path to your Sphinx configuration file.
-  configuration: docs/conf.py
+  configuration: docs/_build/sphinx/conf.py
 
 python:
    install:
