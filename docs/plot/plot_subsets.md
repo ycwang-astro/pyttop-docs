@@ -69,6 +69,17 @@ data.plots(
 ```
 In the above code, two subsets are specified using the `paths` argument. In this case, the subset labels are automatically included in the legend.
 
+The `paths` also accepts [special subsets](../subset/subset_use.md#special-subsets):
+```{code-cell}
+data.plots(
+    'scatter', 
+    cols=('x', 'y'), 
+    s=2,
+    paths=['$eval:obj_class=="A"', '$eval:(10 < x) & (x < 20)'],
+    );
+```
+This can be used to quickly explore the data without explicitly defining the subsets.
+
 Both `paths` and `subsets` accepts `Subset` objects. For example:
 ```{code-cell}
 print(subset_A, subset_xbin, subset_A & subset_xbin)

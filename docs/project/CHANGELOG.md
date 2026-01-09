@@ -6,9 +6,11 @@ This log highlights key changes relevant to users. For more technical details, s
 - Added a plotting function [`pyttop.plot.binned_quantiles()`](../api/plotfuncs.rst#pyttop.plot.binned_quantiles).
 - The arguments `merge_columns` and `ignore_columns` in `Data.merge()` now support regular expressions.
 - `Data` and `Subset` can now be imported directly from the top-level package (`from pyttop import Data, Subset`).
+- Added new special subsets: `$unmasked:` and `$eval:`.
 
 ### Changes
 - Renamed `config.data_name_repr_maxlen` to `config.display.data_name_maxlen`.
+- ExactMatcher() now applies stricter checks to dtypes, etc. 
 
 ## 0.4.3
 ### Additions and Improvements
