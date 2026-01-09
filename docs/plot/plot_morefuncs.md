@@ -43,3 +43,28 @@ refline(x=0,
         );
 ```
 
+## `binned_quantiles`
+[`binned_quantiles()`](../api/plotfuncs.rst#pyttop.plot.binned_quantiles) visualizes the overall trend and scatter of the y-values within x-bins (sliding windows). Usage examples are shown below:
+```{code-cell}
+from pyttop.plot import binned_quantiles
+import numpy as np
+
+x = np.linspace(0, 4, 500)
+y1 = 2*x + np.random.normal(scale=2, size=len(x))
+y2 = 2 * np.sin(2 * x) + 4 + np.random.normal(scale=2, size=len(x))
+
+binned_quantiles(x, y1,
+                 s=1, c='k',
+                 bin_size=0.5, bin_dist=0.25,
+                 label='linear data points', elabel='linear data (trend)',
+                 )
+
+binned_quantiles(x, y2,
+                 show_scatter=False, show_errorbars=False, show_bins=False,
+                 emarker='', errkwargs={'linestyle': '-'},
+                 show_fill=True, fc='orange',
+                 elabel='sine data (trend)'
+                 )
+plt.legend();
+```
+

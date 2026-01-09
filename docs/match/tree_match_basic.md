@@ -51,7 +51,7 @@ data.match(data1, ExactMatcher('col', 'col1'))
 In the code above, we specify a column named `'col'` in `data` and a column named `'col1'` in `data1`. For each row in `data`, the row in `data1` with the *same* value in the specified columns (`'col'` in `data` and `'col1'` in `data1`) will be matched.
 
 ```{caution}
-Even if there are [duplicate values](../basics/operations.md#checking-for-duplicate-values) in the specified column (especially in `data1`), only one row with the matching value will be matched, and a warning message will be printed. It is recommended to handle duplicates before performing the matching.
+Even if there are [duplicate values](../basics/operations.md#checking-for-duplicate-values) in the specified column (especially in `data1`), only one row with the matching value (not guaranteed to be the first match) will be matched, and a warning message will be printed. It is recommended to handle duplicates before performing the matching.
 ```
 
 If the column names for `data` and `data1` are the same, you can simply use:

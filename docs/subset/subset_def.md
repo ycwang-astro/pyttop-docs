@@ -27,7 +27,7 @@ d['x'] = [1, 2, 3, 4, 5]
 d['object type'] = ['meal', 'meal', 'tea', 'coffee', 'tea']
 ```
 
-
+(from-expressions)=
 ### From expressions
 The most straightforward way to define a subset is by using the `add_subsets()` method and specifying an expression:
 ```{code-cell}
@@ -159,7 +159,7 @@ For reference, the columns of the table are summarized below:
 - **expression**: A hint of the expression of the selection that specifies this subset. 
 - **label**: The string that is used for this subset in plots (e.g. labels in legends and titles).
 
-Note that subset groups starting with `$` are *special groups* that contain *virtual subsets*. See documentation on [special subsets](subset_use.md#special-subsets) for details.
+Note that subset groups starting with `$` indicate the virtual *special subsets*. See documentation on [special subsets](subset_use.md#special-subsets) for details. 
 
 
 ### Clearing subsets
