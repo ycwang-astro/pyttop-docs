@@ -1,7 +1,7 @@
 # Changelog
 This log highlights key changes relevant to users. For more technical details, see the [commit history](https://github.com/ycwang-astro/pyttop/commits/).
 
-## Unreleased
+## 0.4.4 (9 Jan 2026)
 ### Additions and Improvements
 - Added a plotting function [`pyttop.plot.binned_quantiles()`](../api/plotfuncs.rst#pyttop.plot.binned_quantiles).
 - The arguments `merge_columns` and `ignore_columns` in `Data.merge()` now support regular expressions.
@@ -10,7 +10,7 @@ This log highlights key changes relevant to users. For more technical details, s
 
 ### Changes
 - Renamed `config.data_name_repr_maxlen` to `config.display.data_name_maxlen`.
-- ExactMatcher() now applies stricter checks to dtypes, etc. 
+- `ExactMatcher()` now applies stricter checks to dtypes, etc. 
 
 ## 0.4.3
 ### Additions and Improvements
