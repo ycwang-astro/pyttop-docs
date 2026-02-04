@@ -2,3 +2,4 @@ jupyter-book~=1.0
 pyttop~=0.4.0
 scipy
 h5py
+sphinx_sitemap
