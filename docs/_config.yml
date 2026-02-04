@@ -34,7 +34,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  baseurl: "https://pyttop.readthedocs.io/"
+  baseurl: "https://pyttop.readthedocs.io/en/latest/"
 
 # sphinx:
 #   extra_extensions:
