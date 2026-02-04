@@ -62,7 +62,7 @@ sphinx:
   config:
     add_module_names: False
     autosummary_generate: True
-    html_output_dir: "html"
+    sitemap_url_scheme: "{link}"
 
 # exclude_patterns:
 #   - "**/.ipynb_checkpoints/**"
