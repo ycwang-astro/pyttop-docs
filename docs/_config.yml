@@ -34,7 +34,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  baseurl: "https://pyttop.readthedocs.io/"
+  baseurl: "https://pyttop.readthedocs.io/en/latest/"
 
 # sphinx:
 #   extra_extensions:
@@ -62,7 +62,6 @@ sphinx:
   config:
     add_module_names: False
     autosummary_generate: True
-    sitemap_url_scheme: "{link}"
 
 # exclude_patterns:
 #   - "**/.ipynb_checkpoints/**"
