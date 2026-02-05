@@ -1,6 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
+project:
+  name: "PyTTOP Documentation"
+
+
 title: PyTTOP Documentation
 author: Yu-Chen Wang
 copyright: "2025-2026"
