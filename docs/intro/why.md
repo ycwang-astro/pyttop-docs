@@ -77,7 +77,7 @@ Why may PyTTOP be useful for you? Let us take a look at the highlights of this p
 - **Matching and merging tables** ([details](../match/match)).
   With tables loaded and matching methods selected, merging two tables can be as simple as:
   ```Python
-  >>> table1.match(table2, ExactMatcher('id_column')).merge()
+  >>> table1.match(table2, ExactMatcher('id_column')); table1.merge()
   ```
 - **Exploring subsets** ([details](../subset/subset)).
   With subsets defined, checking and combining them is straightforward:
