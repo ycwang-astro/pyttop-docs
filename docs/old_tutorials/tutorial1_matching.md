@@ -13,7 +13,7 @@ kernelspec:
 
 # Tutorial on matching
 
-This notebook will demostrate how to match catalogs with this package. 
+This notebook will demonstrate how to match catalogs with this package. 
 
 ```{code-cell} ipython3
 :tags: [remove-cell]
@@ -302,13 +302,15 @@ table2.t
 If you match `table2` to `table1` by `survey_id` using `ExactMatcher`, the first exact match in `table2` will be used:
 
 ```{code-cell} ipython3
-table1.match(table2, ExactMatcher('survey_id', 'survey_id')).merge().t
+table1.match(table2, ExactMatcher('survey_id', 'survey_id'))
+table1.merge().t
 ```
 
-If you wish to keep the records with the same `sruvey_id` in `table2`, you may match `table1` to `table2` instead of matching `table2` to `table1`:
+If you wish to keep the records with the same `survey_id` in `table2`, you may match `table1` to `table2` instead of matching `table2` to `table1`:
 
 ```{code-cell} ipython3
-table2.match(table1, ExactMatcher('survey_id', 'survey_id')).merge().t
+table2.match(table1, ExactMatcher('survey_id', 'survey_id'))
+table2.merge().t
 ```
 
-Or you may merge these records (with the same `sruvey_id`) before matching and merging the catalogs.
+Or you may merge these records (with the same `survey_id`) before matching and merging the catalogs.
