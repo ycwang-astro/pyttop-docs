@@ -13,3 +13,6 @@ Multiple versions of this documentation are available, as listed below. You can 
 - **latest**: the newest version of the documentation, usually reflecting features in the current development version. Some features described here may not exist in your installed version; if needed, follow the installation instructions [here](../start/Installation) to update to the latest development version.
 - **stable**: corresponds to the most recent version released on PyPI. 
 ```
+
+## Using this documentation with AI
+All-in-one PDF and ePub builds of the documentation are available for download. To access them, open the flyout menu in the lower-right corner of the page and select the format you want. After downloading a copy, you can upload it to your preferred AI tool and use it to ask questions, explore explanations, or generate code based on the contents of this documentation.
